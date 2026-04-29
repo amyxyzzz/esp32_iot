@@ -3905,6 +3905,12 @@
 		(color 0 0 0 0)
 		(uuid "dfdd02b6-002d-4097-9cd5-2fc38c4e6d7c")
 	)
+	(junction
+		(at 236.22 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f7d0fb68-39fc-4b2d-83f2-b17cd19cdcad")
+	)
 	(no_connect
 		(at 88.9 78.74)
 		(uuid "1af1b81f-4d99-4a2f-a55e-2fc925e9fcfd")
@@ -3994,6 +4000,16 @@
 			(type default)
 		)
 		(uuid "0c29b12b-2493-400e-9917-cc9674116ce5")
+	)
+	(wire
+		(pts
+			(xy 236.22 91.44) (xy 247.65 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c87efa0-6236-4d55-a69a-4b313b7e9593")
 	)
 	(wire
 		(pts
@@ -4457,6 +4473,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 74.93) (xy 251.46 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dbc04df-11e4-4c21-bbb4-637c05213ccc")
+	)
+	(wire
+		(pts
 			(xy 99.06 139.7) (xy 99.06 142.24)
 		)
 		(stroke
@@ -4657,6 +4683,16 @@
 	)
 	(wire
 		(pts
+			(xy 251.46 74.93) (xy 251.46 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae6de986-c37e-4299-9000-729f0844edf3")
+	)
+	(wire
+		(pts
 			(xy 194.31 59.69) (xy 204.47 59.69)
 		)
 		(stroke
@@ -4847,6 +4883,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 55.88) (xy 113.03 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3cbb7b2-fc0f-4e2e-ba83-8fdbe61e76b4")
+	)
+	(wire
+		(pts
 			(xy 256.54 81.28) (xy 256.54 85.09)
 		)
 		(stroke
@@ -4877,7 +4923,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 91.44) (xy 247.65 91.44)
+			(xy 222.25 91.44) (xy 236.22 91.44)
 		)
 		(stroke
 			(width 0)
@@ -5085,6 +5131,16 @@
 		)
 		(uuid "87d454f3-a599-484c-a181-b08a616701f8")
 	)
+	(label "+5V_USB"
+		(at 222.25 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8e03ceff-b560-4cf5-b9c3-f52b2306b4c7")
+	)
 	(label "VBUS"
 		(at 48.26 76.2 180)
 		(effects
@@ -5155,16 +5211,6 @@
 		)
 		(uuid "f2290045-884f-4d42-bc2a-ad40e30e673d")
 	)
-	(label "+5V_USB"
-		(at 245.11 80.01 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fb743df3-be77-4343-8596-e8433ceba134")
-	)
 	(symbol
 		(lib_id "Device:C")
 		(at 113.03 74.93 0)
@@ -5193,7 +5239,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 113.9952 78.74 0)
 			(effects
 				(font
@@ -5303,6 +5349,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 113.03 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1698986c-8c52-429d-b119-e9175f2f5e27")
+		(property "Reference" "#FLG03"
+			(at 113.03 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 113.03 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 113.03 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d40eff4-e5bf-45e1-b928-de0d4af56672")
+		)
+		(instances
+			(project "esp32_iot"
+				(path "/0c27022e-f7a1-45ca-b269-a51d4ff975b0"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 222.25 97.79 0)
 		(unit 1)
@@ -5330,7 +5442,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 223.2152 101.6 0)
 			(effects
 				(font
@@ -5678,7 +5790,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 115.2652 139.7 0)
 			(effects
 				(font
@@ -5882,7 +5994,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "esp32 footprints:T491A"
 			(at 45.4152 138.43 0)
 			(effects
 				(font
@@ -5949,7 +6061,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 203.2 145.288 90)
 			(effects
 				(font
@@ -6058,6 +6170,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 251.46 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "578dd89e-f2db-402f-a366-3a10a71745f9")
+		(property "Reference" "#PWR057"
+			(at 251.46 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 251.46 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 251.46 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 251.46 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "84bf13a2-9e08-441e-a98f-c87172f14dab")
+		)
+		(instances
+			(project "esp32_iot"
+				(path "/0c27022e-f7a1-45ca-b269-a51d4ff975b0"
+					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 34.29 71.12 180)
 		(unit 1)
@@ -6082,7 +6261,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 36.068 71.12 90)
 			(effects
 				(font
@@ -6340,7 +6519,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LEDC2012X120N"
+		(property "Footprint" "esp32 footprints:LEDC2012X120N"
 			(at 100.66 88.9 0)
 			(effects
 				(font
@@ -6479,7 +6658,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 182.118 64.77 90)
 			(effects
 				(font
@@ -6612,7 +6791,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 104.648 77.47 90)
 			(effects
 				(font
@@ -6877,7 +7056,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "esp32 footprints:T491A"
 			(at 100.0252 139.7 0)
 			(effects
 				(font
@@ -7076,7 +7255,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 258.318 77.47 90)
 			(effects
 				(font
@@ -7210,7 +7389,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 252.73 61.468 90)
 			(effects
 				(font
@@ -7344,7 +7523,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 265.938 77.47 90)
 			(effects
 				(font
@@ -7614,7 +7793,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LEDC2012X120N"
+		(property "Footprint" "esp32 footprints:LEDC2012X120N"
 			(at 86.69 88.9 0)
 			(effects
 				(font
@@ -7753,7 +7932,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 166.878 64.77 90)
 			(effects
 				(font
@@ -7821,7 +8000,7 @@
 				)
 			)
 		)
-		(property "Footprint" "FUSC3226X100N"
+		(property "Footprint" "esp32 footprints:FUSC3226X100N"
 			(at 129.54 159.69 0)
 			(effects
 				(font
@@ -8435,7 +8614,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LEDC2012X120N"
+		(property "Footprint" "esp32 footprints:LEDC2012X120N"
 			(at 71.45 88.9 0)
 			(effects
 				(font
@@ -8708,7 +8887,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LEDC2012X120N"
+		(property "Footprint" "esp32 footprints:LEDC2012X120N"
 			(at 179.07 49.86 0)
 			(effects
 				(font
@@ -8914,7 +9093,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 196.088 64.77 90)
 			(effects
 				(font
@@ -9023,6 +9202,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 236.22 91.44 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe0f4a92-cdab-4fd7-88b6-d67d8c4480a1")
+		(property "Reference" "#FLG04"
+			(at 236.22 93.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 236.22 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 236.22 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 236.22 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "03b98dad-de22-45a8-9e00-aba17e9e8c0e")
+		)
+		(instances
+			(project "esp32_iot"
+				(path "/0c27022e-f7a1-45ca-b269-a51d4ff975b0"
+					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 252.73 54.61 90)
 		(unit 1)
@@ -9048,7 +9293,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 252.73 56.388 90)
 			(effects
 				(font
@@ -9118,7 +9363,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 32.7152 138.43 0)
 			(effects
 				(font
