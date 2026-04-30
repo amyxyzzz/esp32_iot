@@ -49,16 +49,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MF" "Bosch"
+			(property "Description" "Integrated pressure, humidity and temperature sensor; 8-pin 2.5x2.5x0.93mm LGA"
 				(at 0 0 0)
 				(effects
 					(font
@@ -68,7 +59,7 @@
 					(hide yes)
 				)
 			)
-			(property "DESCRIPTION" "Integrated pressure, humidity and temperature sensor; 8-pin 2.5x2.5x0.93mm LGA"
+			(property "MF" "Bosch"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1866,16 +1857,16 @@
 		(uuid "cb3b6189-090b-4e66-b72b-ae5e40a321f3")
 	)
 	(junction
-		(at 189.23 142.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "07625b82-2701-4aae-9095-bbcb4c03b76c")
-	)
-	(junction
 		(at 198.12 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "07da73b0-8512-4f83-93bf-aeaadce7dba2")
+	)
+	(junction
+		(at 176.53 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0db1825b-3884-42c8-a3b6-aa77836f6561")
 	)
 	(junction
 		(at 212.09 142.24)
@@ -1914,12 +1905,6 @@
 		(uuid "3ab75a49-58ae-4508-92e7-d721b6fde8a1")
 	)
 	(junction
-		(at 176.53 142.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4d971be9-7838-42ca-a538-57b40a5c57f6")
-	)
-	(junction
 		(at 255.27 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1936,12 +1921,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "67d03271-a917-40a1-964c-709bb95d564a")
-	)
-	(junction
-		(at 198.12 142.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7c93375e-c46f-4d2c-bada-8770756ccf84")
 	)
 	(junction
 		(at 176.53 119.38)
@@ -2043,6 +2022,16 @@
 	)
 	(wire
 		(pts
+			(xy 189.23 134.62) (xy 189.23 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10e9e127-07b5-423d-b3d1-62bd6beddbec")
+	)
+	(wire
+		(pts
 			(xy 26.67 63.5) (xy 35.56 63.5)
 		)
 		(stroke
@@ -2113,7 +2102,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 142.24) (xy 198.12 142.24)
+			(xy 176.53 143.51) (xy 189.23 143.51)
 		)
 		(stroke
 			(width 0)
@@ -2183,17 +2172,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 135.89) (xy 189.23 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "33377a28-92f4-4537-a71a-9788537d05b3")
-	)
-	(wire
-		(pts
-			(xy 149.86 124.46) (xy 149.86 142.24)
+			(xy 149.86 124.46) (xy 149.86 143.51)
 		)
 		(stroke
 			(width 0)
@@ -2293,16 +2272,6 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 142.24) (xy 198.12 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53683890-aa00-4cbc-bac8-db483d0eabc0")
-	)
-	(wire
-		(pts
 			(xy 255.27 114.3) (xy 255.27 110.49)
 		)
 		(stroke
@@ -2320,6 +2289,16 @@
 			(type default)
 		)
 		(uuid "6c6aa5ab-de7a-490e-a07d-79e0abe463ef")
+	)
+	(wire
+		(pts
+			(xy 176.53 143.51) (xy 176.53 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e55c25c-dd05-4535-b96b-3edd541262cc")
 	)
 	(wire
 		(pts
@@ -2353,7 +2332,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 128.27) (xy 189.23 121.92)
+			(xy 189.23 127) (xy 189.23 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2453,16 +2432,6 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 142.24) (xy 189.23 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b2edbaf-2cdb-4e07-8d7b-733f54e0c84c")
-	)
-	(wire
-		(pts
 			(xy 158.75 105.41) (xy 158.75 106.68)
 		)
 		(stroke
@@ -2493,7 +2462,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 142.24) (xy 176.53 142.24)
+			(xy 149.86 143.51) (xy 176.53 143.51)
 		)
 		(stroke
 			(width 0)
@@ -2553,7 +2522,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 135.89) (xy 176.53 142.24)
+			(xy 176.53 135.89) (xy 176.53 143.51)
 		)
 		(stroke
 			(width 0)
@@ -3239,7 +3208,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MAX4466EXK:SOT65P210X110-5N"
+		(property "Footprint" "esp32 footprints:SOT65P210X110-5N"
 			(at 223.52 121.92 0)
 			(effects
 				(font
@@ -3599,7 +3568,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TEMT6000X01:TRANS_TEMT6000X01"
+		(property "Footprint" "esp32 footprints:TRANS_TEMT6000X01"
 			(at 149.86 54.61 0)
 			(effects
 				(font
@@ -3887,7 +3856,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 189.23 132.08 0)
+		(at 189.23 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3896,7 +3865,7 @@
 		(fields_autoplaced yes)
 		(uuid "8478fcce-f0a7-4010-986b-f381dc731505")
 		(property "Reference" "R29"
-			(at 191.77 130.8099 0)
+			(at 191.77 129.5399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3905,7 +3874,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 191.77 133.3499 0)
+			(at 191.77 132.0799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3914,7 +3883,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 187.452 132.08 90)
+			(at 187.452 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3923,7 +3892,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 189.23 132.08 0)
+			(at 189.23 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3932,7 +3901,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 189.23 132.08 0)
+			(at 189.23 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3981,7 +3950,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BME280:PSON65P250X250X100-8N"
+		(property "Footprint" "esp32 footprints:PSON65P250X250X100-8N"
 			(at 83.82 59.69 0)
 			(effects
 				(font
@@ -4746,7 +4715,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CMC-5042PF-AC:CUI_CMC-5042PF-AC"
+		(property "Footprint" "esp32 footprints:CUI_CMC-5042PF-AC"
 			(at 142.24 121.92 0)
 			(effects
 				(font
@@ -4884,6 +4853,76 @@
 			(project ""
 				(path "/0c27022e-f7a1-45ca-b269-a51d4ff975b0/989a141a-e25e-45c3-9987-b10e8b0a6e30/032a409b-9df2-444c-a15c-8ddac32e6f43"
 					(reference "MK1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 189.23 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bdd4df4f-613f-41fd-8d97-77760f0b17c5")
+		(property "Reference" "C21"
+			(at 193.04 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 193.04 140.9699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 190.1952 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 189.23 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 189.23 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "01ff1a5a-1981-4248-97f7-b2b4254dd3d8")
+		)
+		(pin "2"
+			(uuid "7ccc56b7-1031-4a4d-9b86-8f7d1ef66e05")
+		)
+		(instances
+			(project ""
+				(path "/0c27022e-f7a1-45ca-b269-a51d4ff975b0/989a141a-e25e-45c3-9987-b10e8b0a6e30/032a409b-9df2-444c-a15c-8ddac32e6f43"
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -5096,7 +5135,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 198.12 147.32 0)
+		(at 176.53 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5105,7 +5144,7 @@
 		(fields_autoplaced yes)
 		(uuid "f8b0f641-5ba5-4363-b60f-0b1951dd33aa")
 		(property "Reference" "#PWR044"
-			(at 198.12 153.67 0)
+			(at 176.53 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5114,7 +5153,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 198.12 152.4 0)
+			(at 176.53 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5123,7 +5162,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 198.12 147.32 0)
+			(at 176.53 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5132,7 +5171,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 198.12 147.32 0)
+			(at 176.53 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5141,7 +5180,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 198.12 147.32 0)
+			(at 176.53 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)

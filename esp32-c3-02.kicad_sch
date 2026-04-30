@@ -4090,12 +4090,6 @@
 		(uuid "1ec94fd4-c24b-426c-acff-62b61c78d339")
 	)
 	(junction
-		(at 148.844 171.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "22b01150-7059-4300-81c7-c199dd16e8c4")
-	)
-	(junction
 		(at 96.52 146.05)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4112,12 +4106,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4708a88e-7154-4d21-96c7-7d69c86e7b10")
-	)
-	(junction
-		(at 148.844 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "50571a51-b043-4cf7-ba10-8365960fab5b")
 	)
 	(junction
 		(at 80.01 33.02)
@@ -4156,6 +4144,12 @@
 		(uuid "8dc44ea5-6735-429b-b122-0735fd76baa5")
 	)
 	(junction
+		(at 148.844 171.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a10c8757-d971-4265-9da8-c81da7c5794e")
+	)
+	(junction
 		(at 148.844 179.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4178,6 +4172,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dc1c5193-c314-467a-ad81-b8ea527db808")
+	)
+	(junction
+		(at 148.844 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7ae880d-2956-4d58-bddd-013bb9f28160")
 	)
 	(junction
 		(at 36.83 74.93)
@@ -4393,6 +4393,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.844 168.91) (xy 152.4 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f3fd0a5-a84d-4a05-8960-79861288a5f8")
+	)
+	(wire
+		(pts
 			(xy 68.58 33.02) (xy 80.01 33.02)
 		)
 		(stroke
@@ -4453,6 +4463,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 168.91) (xy 148.844 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e53da83-0929-4209-a2fb-bc0289dfd5c1")
+	)
+	(wire
+		(pts
 			(xy 148.59 179.07) (xy 148.844 179.07)
 		)
 		(stroke
@@ -4480,16 +4500,6 @@
 			(type default)
 		)
 		(uuid "324f5e90-f8e4-47d0-80fb-4cd55eca5680")
-	)
-	(wire
-		(pts
-			(xy 148.844 171.45) (xy 152.4 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "385c73f9-d3f9-46ac-8468-f694f28e900c")
 	)
 	(wire
 		(pts
@@ -4783,6 +4793,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.844 171.45) (xy 152.4 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6433ba0c-652b-43c0-8080-72841032d672")
+	)
+	(wire
+		(pts
 			(xy 35.56 158.75) (xy 39.37 158.75)
 		)
 		(stroke
@@ -5043,16 +5063,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.844 168.91) (xy 152.4 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0859918-961d-42d7-aebc-7a34cf8115e9")
-	)
-	(wire
-		(pts
 			(xy 118.11 168.91) (xy 123.19 168.91)
 		)
 		(stroke
@@ -5130,6 +5140,16 @@
 			(type default)
 		)
 		(uuid "b9ef833c-e7d8-4a7e-8125-6d465b295e80")
+	)
+	(wire
+		(pts
+			(xy 148.59 171.45) (xy 148.844 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc2faffe-c8c5-46e8-8172-90c4599e26dc")
 	)
 	(wire
 		(pts
@@ -5220,26 +5240,6 @@
 			(type default)
 		)
 		(uuid "ca46897d-18c2-402a-8557-cf2624b32c9d")
-	)
-	(wire
-		(pts
-			(xy 148.59 168.91) (xy 148.844 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc831c2d-a106-40bb-bc2d-1bf8ee41f289")
-	)
-	(wire
-		(pts
-			(xy 148.59 171.45) (xy 148.844 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce9f5ad5-f61d-4cce-8acb-753df759886e")
 	)
 	(wire
 		(pts
@@ -6077,7 +6077,7 @@
 				)
 			)
 		)
-		(property "Footprint" "W25Q32JVSSIQ:SOIC127P790X216-8N"
+		(property "Footprint" "esp32 footprints:SOIC127P790X216-8N"
 			(at 73.66 153.67 0)
 			(effects
 				(font
@@ -7562,7 +7562,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:SiliconLabs_QFN-20-1EP_3x3mm_P0.5mm"
+		(property "Footprint" "esp32 footprints:QFN50P400X400X100-21N"
 			(at 114.3 111.76 0)
 			(effects
 				(font
@@ -9029,7 +9029,7 @@
 				)
 			)
 		)
-		(property "Value" "20"
+		(property "Value" "50"
 			(at 186.69 71.12 90)
 			(effects
 				(font
@@ -9175,7 +9175,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ESP32-C3-WROOM-02-H4:MODULE_ESP32-C3-WROOM-02-H4"
+		(property "Footprint" "esp32 footprints:MODULE_ESP32-C3-WROOM-02-H4"
 			(at 220.98 69.85 0)
 			(effects
 				(font
@@ -9719,7 +9719,7 @@
 				)
 			)
 		)
-		(property "Footprint" "GSD090012SEU:AMPHENOL_GSD090012SEU"
+		(property "Footprint" "esp32 footprints:AMPHENOL_GSD090012SEU"
 			(at 194.31 132.08 0)
 			(effects
 				(font
