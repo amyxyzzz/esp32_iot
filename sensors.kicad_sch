@@ -1911,6 +1911,12 @@
 		(uuid "51d1d665-d3a2-4ef5-ac5b-2733579376c4")
 	)
 	(junction
+		(at 158.75 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58537588-747b-444c-b546-a89592d86f77")
+	)
+	(junction
 		(at 35.56 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1933,12 +1939,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a75b3792-6b97-4dbf-8de5-60562ea9e480")
-	)
-	(junction
-		(at 158.75 119.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a8dffa64-bedf-4d2e-8ae5-78b1c79fc9b8")
 	)
 	(junction
 		(at 105.41 49.53)
@@ -2049,16 +2049,6 @@
 			(type default)
 		)
 		(uuid "156ebb50-3261-4727-9329-6b95d1ef5120")
-	)
-	(wire
-		(pts
-			(xy 158.75 119.38) (xy 176.53 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1572d808-ace0-4d28-8e0d-96e0b9e1f325")
 	)
 	(wire
 		(pts
@@ -2432,6 +2422,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 119.38) (xy 176.53 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94871b3b-e265-42c4-9cc9-026baf7b7577")
+	)
+	(wire
+		(pts
 			(xy 158.75 105.41) (xy 158.75 106.68)
 		)
 		(stroke
@@ -2589,6 +2589,16 @@
 			(type default)
 		)
 		(uuid "dacd2224-1da9-40d5-b3ef-1666844c3332")
+	)
+	(wire
+		(pts
+			(xy 158.75 119.38) (xy 163.83 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddd05d0b-06ef-4f18-ae21-8e0d9e3bf935")
 	)
 	(wire
 		(pts
@@ -3177,6 +3187,73 @@
 			(project "esp32_iot"
 				(path "/0c27022e-f7a1-45ca-b269-a51d4ff975b0/989a141a-e25e-45c3-9987-b10e8b0a6e30/032a409b-9df2-444c-a15c-8ddac32e6f43"
 					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 167.64 119.38 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5abfe2de-eeaf-46e9-adc3-764479aa3467")
+		(property "Reference" "C22"
+			(at 163.322 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10n"
+			(at 171.45 122.174 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 171.45 118.4148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 167.64 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 167.64 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b15a6a4-2ff8-493e-b329-661f8dfe3108")
+		)
+		(pin "2"
+			(uuid "b50f9bed-4753-40c4-ab73-5a4c40edcd5f")
+		)
+		(instances
+			(project ""
+				(path "/0c27022e-f7a1-45ca-b269-a51d4ff975b0/989a141a-e25e-45c3-9987-b10e8b0a6e30/032a409b-9df2-444c-a15c-8ddac32e6f43"
+					(reference "C22")
 					(unit 1)
 				)
 			)
